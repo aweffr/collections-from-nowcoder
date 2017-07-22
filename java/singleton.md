@@ -1,5 +1,7 @@
 # Singleton设计模式
 
+*本文为对陈皓博客`http://blog.csdn.net/haoel/article/details/4028232`的学习.*
+
 ## Motivation
 当一个系统/软件需要全局配置信息, 或者一个Factory, 或者一个*主控类*, 可以用Singleton的代码方式达成目的.
 
