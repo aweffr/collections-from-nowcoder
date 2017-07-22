@@ -1,1 +1,3 @@
-# collections-from-nowcoder
+# 编程笔记
+记录编程路上遇到的各种东西. 知识, 概念, 解决方案, 配置, cheatsheet, 心得, 等等等.
+
