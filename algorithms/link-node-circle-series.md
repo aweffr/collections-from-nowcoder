@@ -26,14 +26,14 @@
 ![cycle-1.png](./cycle-1.png)
 
 证明:
-```
-慢指针走过的距离 S<sub>slow</sub> = X + D  
-快指针走过的距离 S<sub>fast</sub> = 2 * (X + D)  
-S<sub>fast</sub> - S<sub>slow</sub> = X + D  
-同时, S<sub>fast</sub> - S<sub>slow</sub> 等同于 **为了相遇而多跑的圈数** 即  
-S<sub>fast</sub> - S<sub>slow</sub> = n * R (n = 1, 2, 3...)  
-得到 X = n * R - D  
-```
+
+1. 慢指针走过的距离 S<sub>slow</sub> = X + D  
+2. 快指针走过的距离 S<sub>fast</sub> = 2 * (X + D)  
+3. S<sub>fast</sub> - S<sub>slow</sub> = X + D  
+4. 同时, S<sub>fast</sub> - S<sub>slow</sub> 等同于 **为了相遇而多跑的圈数** 即  
+5. S<sub>fast</sub> - S<sub>slow</sub> = n * R (n = 1, 2, 3...)  
+6. 得到 X = n * R - D  
+
 即两个指针的第二次相遇, 是一个指针回到原点在走X距离后,   
 另一个指针从相遇点正好走了n圈, 并回退D步所处的位置, 即环入口.
 
