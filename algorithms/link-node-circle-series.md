@@ -23,7 +23,7 @@
 3. 如果有环, fast指针一定会和slow指针相遇
 4. 当fast和slow相遇, 把fast移回head位置, 然后两个指针都只移动一步, 继续遍历, 再次相遇的节点就是第一个入环的节点.
 
-![cycle-1.png](./cycle-1.png)
+![cycle-1.png](./link-node-circle-series/cycle-1.png)
 
 证明:
 
@@ -51,12 +51,12 @@
 记链表1的入环点为`loop1`, 链表2的入环点为`loop2`, 可以分成两种情况讨论:
 
 1. 情况一: loop1 == loop2, 那么一定两个链表是相交的, 如下图所示  
-    ![cycle-2.png](./cycle-2.png)  
+    ![cycle-2.png](./link-node-circle-series/cycle-2.png)  
     这种情况下我们只需要考虑链表1的头结点和链表2的头结点到入环点这段路程中的`第一个相交点`, 处理方法和问题二类似;
 2. 情况二: loop1 != loop2, 那么又分两种情况:
     1. 两个链表不相交
     2. 两个链表相交:  
     若两个链表相交, 那么相交的节点一定在环上. (若不在环上还相交了, 就变成了情况一), 如下图所示:
-    ![cycle-3.png](./cycle-3.png)  
+    ![cycle-3.png](./link-node-circle-series/cycle-3.png)  
     那么, **判断有没有交点**就从`loop1`开始遍历, 看在回到`loop1`之前能不能遇上`loop2`就可以了. 交点选`loop1`或者`loop2`均可.
 
